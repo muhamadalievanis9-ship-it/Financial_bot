@@ -1,11 +1,11 @@
 import asyncio
-import sqlite3
+import sqlite3 
+import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 
 # Вставь сюда свой токен от @BotFather
-BOT_TOKEN = "8988652554:AAHebsUu7kFrgd-3mBdxkgaKzODprwTw2ME"
-
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
